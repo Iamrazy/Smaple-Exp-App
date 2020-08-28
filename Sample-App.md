@@ -42,7 +42,7 @@ High level documentation
 	   > In Subnet Associations add Private subnet.
 	   > and also edit routes add '0.0.0.0/0 to NAT Gateway' 
 	8. Security Groups 
-	   > when you create VPC one Security group available ypu can use that security group.
+	   > when you create VPC one Security group available you can use that security group.
   ```
 #### Create Codecommit Repo
 ```sh
