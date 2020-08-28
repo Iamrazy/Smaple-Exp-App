@@ -50,5 +50,31 @@ High level documentation
    2. For git operations, you need code-commit credentials.
    3. For creating codeCommit credentials.
       > Go to `IAM` > `users` > `add user` > `select user` > `security credentials` > `HTTPS Git credentials for AWS CodeCommit` > `Geneate credentials`
+   Note::
+   4. And also IAM user having `AWSCodeCommitFullAccess` and `AWSCodePipelineFull Access`
+```
+#### Launch Instance
+```sh
+   1. Launch Amazon Instance In Above Mentioned VPC.
+```
+#### Create Loadbalancer
+```sh
+   1. Create Loadbalancer and tagrget group.
+   2. Add Above launched Instance
+   3. select target port and path
+```
+#### Create CodePipeline
+```sh
+   1. Now create codedeploy and deployment group.
+    > when you create deployment group select amazon EC2 and give the tag and value of Target Instance both must be same.
+   2. Now Create Pipeline.
+    > `give the name of pipeline` > `service role` > `select source provider` > `select your repo` > `branch name` > `select detetion options`
+   3. now select deployment groups 
+    > `select deploy Provider` > `AWSCodeDeploy` > `choose application name` > `choose deployment group` > `create pipeline`
+```
+#### Application access
+
+```sh
+   1. Go to the loadbalancer dashboad, copy dns address paste in browser.
 ```
   
