@@ -47,7 +47,8 @@ High level documentation
 #### Create Codecommit Repo
 ```sh
    1. Create one repo in AWS Codecommit.
-   2. for git operations, you need code-commit crediatils.
-   3. 
+   2. For git operations, you need code-commit credentials.
+   3. For creating codeCommit credentials.
+      > Go to `IAM` > `users` > `add user` > `select user` > `security credentials` > `HTTPS Git credentials for AWS CodeCommit` > `Geneate credentials`
 ```
   
